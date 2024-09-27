@@ -2,7 +2,7 @@
 import { gsap } from "gsap";
 import Image from "next/image";
 import { useEffect } from "react";
-import me from "../public/images/meprofilepic.jpg"
+
 import Footer from "./components/footer";
 import { FaGithub } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
@@ -12,6 +12,7 @@ import { useRouter } from "next/navigation";
 import eventprojectimg from '../public/images/eventpro.jpg';
 import portfolioproimg from '../public/images/portfolioprojectimg.jpg';
 import ecommmerce from '../public/images/Ecommerceimg.png';
+
 
 
 
@@ -40,8 +41,8 @@ function loader() {
       opacity: 0,
     })
 
-    .to(".disappear",{
-      opacity:1,
+    .to(".disappear", {
+      opacity: 1,
     })
 }
 
@@ -67,35 +68,35 @@ export default function Home() {
 
       <div id="homepage" className="h-screen w-full" style={{ backgroundColor: "#dadada" }}>
 
-      
 
 
 
-       
+
+
         <div id="nav" className="disappear opacity-0 flex fixed justify-between top-0 left-0 right-0 bg-[#dadada]" style={{ padding: "20px 3vw", height: "2vh", fontSize: "20px" }}>
           <a href="#imagery" className="relative text-black">
             BALWINDER
-             <span className="absolute inline-block bg-black" style={{bottom:"-30px",height:"1px", left:"0" , width:"100%" }}></span>
-                     
+            <span className="absolute inline-block bg-black" style={{ bottom: "-30px", height: "1px", left: "0", width: "100%" }}></span>
+
           </a>
           <a href="#work" className="relative text-black">
             WORKS
-            <span className="absolute inline-block bg-black" style={{bottom:"-30px",height:"1px", left:"0" , width:"100%" }}></span>
-                    
+            <span className="absolute inline-block bg-black" style={{ bottom: "-30px", height: "1px", left: "0", width: "100%" }}></span>
+
           </a>
           <a href="#socials" className="relative text-black">
             SOCIALS
-            <span className="absolute inline-block bg-black" style={{bottom:"-30px",height:"1px", left:"0" , width:"100%" }}></span>
-                    
+            <span className="absolute inline-block bg-black" style={{ bottom: "-30px", height: "1px", left: "0", width: "100%" }}></span>
+
           </a>
           <a href="#contacts" className="relative text-black">
             CONTACT
-            <span className="absolute inline-block bg-black" style={{bottom:"-30px",height:"1px", left:"0" , width:"100%" }}></span>
-                    
+            <span className="absolute inline-block bg-black" style={{ bottom: "-30px", height: "1px", left: "0", width: "100%" }}></span>
+
           </a>
 
         </div>
-        
+
 
         <hr className="ml-12 mr-12 mt-20 border-t-black " />
 
@@ -114,8 +115,18 @@ export default function Home() {
             </a>
 
           </div>
-          <div className="relative flex  items-center justify-center w-2/3 h-full">
-            <Image src={me} alt="me" className="absolute top-1/4 left-1/2  hover:scale-150" style={{ height: "400px", width: "20vw", borderRadius: "2vw", transition: "cubic-bezier(0.19, 1, 0.22, 1) 1s" }} />
+          <div className="relative flex  items-center justify-center w-2/3 h-full ">
+
+
+            <div id='right' className='w-1/2 h-80 md:h-auto m-40'>
+              <div id='imagery'>
+                <div className="imgright">
+                  <div className="imagecenter" ></div>
+                  <div className="imagecenter"></div>
+
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -133,8 +144,8 @@ export default function Home() {
             </h1>
           </div>
         </div>
-       {/* projects */}
-       
+        {/* projects */}
+
         <div className="mx-4 my-24">
           <div className="mt-3 h-full w-full flex justify-center items-center   sm:mt-10 sm:h-full sm:w-full sm:flex sm:justify-center sm:items-center   md:mt-10 md:h-full md:w-full md:flex md:justify-center md:items-center   lg:mt-10 lg:h-full lg:w-full lg:flex lg:justify-center lg:items-center   xl:mt-10 xl:h-full xl:w-full xl:flex xl:justify-center xl:items-center   2xl:mt-10 2xl:h-full 2xl:w-full 2xl:flex 2xl:justify-center 2xl:items-center">
             <div className="    w-[85%] grid grid-cols-1 gap-x-0 gap-y-2   sm:w-[85%] sm:grid sm:grid-cols-1 sm:gap-x-0 sm:gap-y-4   md:w-[90%] md:grid md:grid-cols-2 md:gap-x-0 md:gap-y-8   lg:w-[93%] lg:grid lg:grid-cols-3 lg:gap-x-0 lg:gap-y-8   xl:w-[100%] xl:grid xl:grid-cols-3 xl:gap-x-0 xl:gap-y-8   2xl:w-[85%] 2xl:grid 2xl:grid-cols-3 2xl:gap-x-0 2xl:gap-y-8">
@@ -149,7 +160,7 @@ export default function Home() {
                   </h1>
                   <h1 className="   h-40 w-full my-1 text-center text-white font-bold text-[0.5rem]   sm:h-44 sm:w-full sm:my-4 sm:text-center sm:text-white sm:font-bold sm:text-xs   md:h-44 md:w-full md:my-5 md:text-center md:text-white md:font-bold md:text-xs   lg:h-44 lg:w-full lg:my-5 lg:text-center lg:text-white lg:font-bold lg:text-sm   xl:h-44 xl:w-full xl:my-5 xl:text-center xl:text-white xl:font-bold xl:text-sm   2xl:h-44 2xl:w-full 2xl:my-5 2xl:text-center 2xl:text-white 2xl:font-bold 2xl:text-sm ">
                     Next.js, TypeScript, Tailwind CSS,Nodejs,MongoDB</h1>
-                    
+
                   <div className="   w-full my-0 flex flex-row justify-between    sm:w-full sm:my-0 sm:flex sm:flex-row sm:justify-between   md:w-full md:my-0 md:flex md:flex-row md:justify-between   lg:w-full lg:my-1 lg:flex lg:flex-row lg:justify-between    xl:w-full xl:my-1 xl:flex xl:flex-row xl:justify-between    2xl:w-full 2xl:my-1 2xl:flex 2xl:flex-row 2xl:justify-between">
                     <a href="https://eventtickets-idldds8by-balwinders-projects.vercel.app/" target="_blank" className="   mb-0 mx-8 bg-white p-1 rounded-[0.25rem] border-2 border-white hover:border-2 hover:border-[#4a4036]    sm:mb-1 sm:mx-8 sm:bg-white sm:p-1 sm:rounded-md sm:border-2 sm:border-white sm:hover:border-2 sm:hover:border-[#4a4036] sm:   md:mb-4 md:mx-8 md:bg-white md:p-2 md:rounded-lg md:border-2 md:border-white md:hover:border-2 md:hover:border-[#4a4036] md:   lg:mx-8 lg:bg-white lg:p-2 lg:rounded-lg lg:border-2 lg:border-white lg:hover:border-2 lg:hover:border-[#4a4036] lg:   xl:mx-8 xl:bg-white xl:p-2 xl:rounded-lg xl:border-2 xl:border-white xl:hover:border-2 xl:hover:border-[#4a4036] xl:   2xl:mx-8 2xl:bg-white 2xl:p-2 2xl:rounded-lg 2xl:border-2 2xl:border-white 2xl:hover:border-2 2xl:hover:border-[#4a4036] 2xl: ">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-square-arrow-out-up-right    h-3 w-3   sm:h-5 sm:w-5   "><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"></path><path d="m21 3-9 9"></path><path d="M15 3h6v6"></path></svg>
