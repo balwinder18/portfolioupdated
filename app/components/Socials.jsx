@@ -22,7 +22,7 @@ const Socials = () => {
                 <SiLeetcode/>
                 </i></a>
             
-            <a className='p-3 bg-white m-3' style={{borderRadius:"50%"}} href="https://www.google.com" target="_blank"><i className="text-8xl text-opacity-90 text-black">
+            <a className='p-3 bg-white m-3' style={{borderRadius:"50%"}} href="https://x.com/Balwinder_sb?t=NkqHaphnsZ2mCYY81ZykNA&s=09" target="_blank"><i className="text-8xl text-opacity-90 text-black">
                 <FaTwitter/>
                 </i></a>
             

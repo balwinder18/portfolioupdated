@@ -72,9 +72,9 @@ export default function Home() {
 
 
 
-
-        <div id="nav" className="disappear opacity-0 flex fixed justify-between top-0 left-0 right-0 bg-[#dadada]" style={{ padding: "20px 3vw", height: "2vh", fontSize: "20px" }}>
-          <a href="#imagery" className="relative text-black">
+{/* 
+        <div id="nav" className="disappear opacity-0 flex fixed justify-between top-0 left-0 right-0 bg-[#dadada] " style={{ padding: "20px 3vw", height: "2vh", fontSize: "20px" }}>
+          <a href="#imagery" className="relative text-black ">
             BALWINDER
             <span className="absolute inline-block bg-black" style={{ bottom: "-30px", height: "1px", left: "0", width: "100%" }}></span>
 
@@ -95,7 +95,29 @@ export default function Home() {
 
           </a>
 
-        </div>
+        </div> */}
+
+
+
+           <div id="nav" className="disappear opacity-0 flex fixed justify-between top-0 left-0 right-0 bg-[#dadada] " style={{ padding: "20px 3vw", height: "2vh", fontSize: "20px" }}>
+                <a href="#imagery"  className="relative text-black">
+                    BALWINDER
+                    <span id="line1" className="line absolute inline-block  bg-black" style={{height:"1px",bottom: "-30px"}}></span>
+                    <span id="line2" className="line absolute inline-block  bg-black" style={{height:"1px",bottom: "-30px"}}></span>
+                </a>
+                <a href="#socials"  className="relative text-black ">SOCIALS
+                    <span id="line1" className=" line absolute inline-block  bg-black" style={{bottom: "-30px",height:"1px"}}></span>
+                    <span id="line2" className="line absolute inline-block  bg-black" style={{bottom: "-30px",height:"1px"}}></span>
+                </a>
+                <a href="#work"  className="relative text-black ">WORKS
+                    <span id="line1" className="line absolute inline-block bg-black" style={{bottom: "-30px",height:"1px"}}></span>
+                    <span id="line2" className="line absolute inline-block bg-black" style={{bottom: "-30px",height:"1px"}}></span>
+                </a>
+                <a href="#contacts"  className="relative text-black ">CONTACT
+                    <span id="line1" className="line absolute inline-block  bg-black" style={{bottom: "-30px",height:"1px"}}></span>
+                    <span id="line2" className="line absolute inline-block  bg-black" style={{bottom: "-30px",height:"1px"}}></span>
+                </a>
+            </div>
 
 
         <hr className="ml-12 mr-12 mt-20 border-t-black " />
@@ -243,6 +265,7 @@ export default function Home() {
         </div>
 
         <Footer />
+      
       </div>
 
     </>
