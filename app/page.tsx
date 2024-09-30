@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import Image from "next/image";
 import { useEffect } from "react";
 
-import Footer from "./components/footer";
+import Footer from "../app/components/Footer";
 import { FaGithub } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
 import Socials from './components/Socials';
