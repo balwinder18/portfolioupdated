@@ -99,7 +99,7 @@ export default function Home() {
 
 
 
-           <div id="nav" className="disappear opacity-0 flex fixed justify-between top-0 left-0 right-0 bg-[#dadada] " style={{ padding: "20px 3vw", height: "2vh", fontSize: "20px" }}>
+           <div id="nav" className="disappear opacity-0 hidden lg:flex  fixed justify-between top-0 left-0 right-0 bg-[#dadada] " style={{ padding: "20px 3vw", height: "2vh", fontSize: "20px" }}>
                 <a href="#imagery"  className="relative text-black">
                     BALWINDER
                     <span id="line1" className="line absolute inline-block  bg-black" style={{height:"1px",bottom: "-30px"}}></span>
@@ -120,11 +120,11 @@ export default function Home() {
             </div>
 
 
-        <hr className="ml-12 mr-12 mt-20 border-t-black " />
+        <hr className="ml-12 hidden lg:block mr-12 mt-20 border-t-black " />
 
-        <div id="imagery" className="flex justify-center items-center w-4/5 " style={{ height: "500px", margin: "10vh 6vw" }}>
-          <div className="w-2/4 h-auto justify-center" >
-            <h1 style={{ color: "#333", fontSize: "1.9vw", fontWeight: "400" }}>Hello!! I am<span style={{ color: "#14cf93", fontStyle: "italic", fontWeight: "bold" }}> Balwinder Singh</span> currently a third year undergrad from YMCA university pursuing Bachelor's in Technology!</h1>
+        <div id="imagery" className="flex flex-col lg:flex-row justify-center items-center w-4/5 " style={{ height: "500px", margin: "10vh 10vw" }}>
+          <div className="lg:w-2/4 w-full h-auto justify-center" >
+            <h1 style={{ color: "#333", fontWeight: "400" }} className="lg:text-3xl">Hello!! I am<span style={{ color: "#14cf93", fontStyle: "italic", fontWeight: "bold" }}> Balwinder Singh</span> currently a third year undergrad from YMCA university pursuing Bachelor's in Technology!</h1>
             <a href="https://drive.google.com/file/d/1YTZ9Eq2aGKDoiCCFum0AAhZPNzfsFm4e/view?usp=drive_link" target="_blank">
               <button className="h-10 w-36 flex flex-row justify-center items-center font-bold text-lg text-[#14fca9] bg-black rounded-md transition-all ease-in hover:bg-white hover:text-black hover:border-2 hover:border-[#fefae0] my-3   sm:h-12 sm:w-40 sm:flex sm:flex-row sm:justify-center sm:items-center sm:font-bold sm:text-lg sm:text-[#14fca9] sm:bg-black sm:rounded-lg sm:transition-all sm:ease-in sm:hover:bg-white sm:hover:text-black sm:hover:border-2 sm:hover:border-[#fefae0] sm:my-3   md:h-12 md:w-40 md:flex md:flex-row md:justify-center md:items-center md:font-bold md:text-lg md:text-[#14fca9] md:bg-black md:rounded-lg md:transition-all md:ease-in md:hover:bg-white md:hover:text-black md:hover:border-2 md:hover:border-[#fefae0] md:my-4   lg:h-12 lg:w-40 lg:flex lg:flex-row lg:justify-center lg:items-center lg:font-bold lg:text-lg lg:text-[#14fca9] lg:bg-black lg:rounded-lg lg:transition-all lg:ease-in lg:hover:bg-white lg:hover:text-black lg:hover:border-2 lg:hover:border-[#fefae0] lg:my-4   xl:h-12 xl:w-40 xl:my-4 xl:flex xl:flex-row xl:justify-center xl:items-center xl:font-bold xl:text-lg xl:text-[#14fca9] xl:bg-black xl:rounded-lg xl:transition-all xl:ease-in xl:hover:bg-white xl:hover:text-black xl:hover:border-2 xl:hover:border-[#fefae0] 2xl:h-12 2xl:w-40 2xl:my-4 2xl:flex 2xl:flex-row 2xl:justify-center 2xl:items-center 2xl:font-bold 2xl:text-lg 2xl:text-[#14fca9] 2xl:bg-black 2xl:rounded-lg 2xl:transition-all 2xl:ease-in 2xl:hover:bg-white 2xl:hover:text-black 2xl:hover:border-2 2xl:hover:border-[#fefae0]">
                 <p className="mx-2">Resume</p>
@@ -137,14 +137,14 @@ export default function Home() {
             </a>
 
           </div>
-          <div className="relative flex  items-center justify-center w-2/3 h-full ">
+          <div className="relative flex items-center justify-center mr-40 w-full lg:w-2/3 h-full ">
 
 
-            <div id='right' className='w-1/2 h-80 md:h-auto m-40'>
+            <div id='right' className='w-1/2 h-50 md:h-auto m-45 lg:m-0 mr-5'>
               <div id='imagery'>
                 <div className="imgright">
-                  <div className="imagecenter" ></div>
-                  <div className="imagecenter"></div>
+                  <div className="imagecenter h-[250px] lg:h-[400px] w-[50vw] lg:w-[20vw] " ></div>
+                  <div className="imagecenter h-[250px] lg:h-[400px] w-[50vw] lg:w-[20vw] "></div>
 
                 </div>
               </div>
@@ -154,8 +154,8 @@ export default function Home() {
 
         <div id="info" className="" style={{ width: "20vw", marginLeft: "20vw", marginRight: "20vw", marginTop: "100px", marginBottom: "100px" }}>
           <div id="inforow">
-            <h5 className="m-3 text-opacity-70" style={{ fontSize: "1vw", fontWeight: "300" }}>*THINGS I CAN HELP YOU WITH</h5>
-            <h4 style={{ fontSize: "1.5vw", fontWeight: "500" }}>WEB/UI&UX/FRONTEND/BACKEND/FULL STACK DEVELOPMENT</h4>
+            <h5 className="lg:m-3 mb-3 text-opacity-70 text-[15px]" style={{ fontWeight: "300" }}>*THINGS I CAN HELP YOU WITH</h5>
+            <h4 style={{ fontWeight: "500" }} className="lg:text-[30px] text-[14px]">WEB/UI&UX/FRONTEND/BACKEND/FULL STACK DEVELOPMENT</h4>
           </div>
         </div>
 
@@ -176,7 +176,7 @@ export default function Home() {
                 <div>
                   <Image src={eventprojectimg} alt="1" className="h-28 w-[6rem] rounded-l-lg object-fill   sm:h-40 sm:w-[10.5rem] sm:rounded-l-xl sm:object-fill   md:h-64 md:w-[19.5rem] md:rounded-t-xl md:rounded-bl-none md:rounded-br-none md:object-fill   lg:h-60 lg:w-[18rem] lg:rounded-t-xl lg:object-fill   xl:h-72 xl:w-[24rem] xl:rounded-t-xl xl:object-fill   2xl:h-72 2xl:w-[24rem] 2xl:rounded-t-xl 2xl:object-fill" />
                 </div>
-                <div className="   p-4 flex flex-col bg-black h-28 w-[15rem] rounded-r-lg   sm:p-4 sm:flex sm:flex-col sm:bg-black sm:h-40 sm:w-[24rem] sm:rounded-r-xl   md:p-4 md:flex md:flex-col md:justify-center md:items-center md:bg-black md:h-44 md:w-[19.5rem] md:rounded-b-xl md:rounded-tr-none   lg:p-4 lg:flex lg:flex-col lg:justify-center lg:items-center lg:bg-black lg:h-56 lg:w-[18rem] lg:rounded-b-xl   xl:p-4 xl:flex xl:flex-col xl:justify-center xl:items-center xl:bg-black xl:h-56 xl:w-[24rem] xl:rounded-b-xl   2xl:p-4 2xl:flex 2xl:flex-col 2xl:justify-center 2xl:items-center 2xl:bg-black 2xl:h-56 2xl:w-[24rem] 2xl:rounded-b-xl">
+                <div className="p-2 flex flex-col bg-black h-28 w-[15rem] rounded-r-lg   sm:p-4 sm:flex sm:flex-col sm:bg-black sm:h-40 sm:w-[24rem] sm:rounded-r-xl   md:p-4 md:flex md:flex-col md:justify-center md:items-center md:bg-black md:h-44 md:w-[19.5rem] md:rounded-b-xl md:rounded-tr-none   lg:p-4 lg:flex lg:flex-col lg:justify-center lg:items-center lg:bg-black lg:h-56 lg:w-[18rem] lg:rounded-b-xl   xl:p-4 xl:flex xl:flex-col xl:justify-center xl:items-center xl:bg-black xl:h-56 xl:w-[24rem] xl:rounded-b-xl   2xl:p-4 2xl:flex 2xl:flex-col 2xl:justify-center 2xl:items-center 2xl:bg-black 2xl:h-56 2xl:w-[24rem] 2xl:rounded-b-xl">
                   <h1 className="   mt-0 text-[#14fca9] text-center text-xl font-extrabold   sm:mt-0 sm:text-[#14fca9] sm:text-center sm:text-3xl sm:font-extrabold   md:mt-4 md:text-[#14fca9] md:text-3xl md:font-extrabold   lg:mt-2 lg:text-[#14fca9] lg:text-3xl lg:font-extrabold   xl:mt-2 xl:text-[#14fca9] xl:text-3xl xl:font-extrabold   2xl:mt-2 2xl:text-[#14fca9] 2xl:text-[1.5rem] 2xl:font-extrabold">
                     Event Management Website
                   </h1>
@@ -199,7 +199,7 @@ export default function Home() {
                 <div>
                   <Image src={portfolioproimg} alt="" className="   h-28 w-[6rem] rounded-l-lg object-fill   sm:h-40 sm:w-[10.5rem] sm:rounded-l-xl sm:object-fill   md:h-64 md:w-[19.5rem] md:rounded-t-xl md:rounded-bl-none md:rounded-br-none md:object-fill   lg:h-60 lg:w-[18rem] lg:rounded-t-xl lg:object-fill   xl:h-72 xl:w-[24rem] xl:rounded-t-xl xl:object-fill   2xl:h-72 2xl:w-[24rem] 2xl:rounded-t-xl 2xl:object-fill" />
                 </div>
-                <div className="   p-4 flex flex-col bg-black h-28 w-[15rem] rounded-r-lg   sm:p-4 sm:flex sm:flex-col sm:bg-black sm:h-40 sm:w-[24rem] sm:rounded-r-xl   md:p-4 md:flex md:flex-col md:justify-center md:items-center md:bg-black md:h-44 md:w-[19.5rem] md:rounded-b-xl md:rounded-tr-none   lg:p-4 lg:flex lg:flex-col lg:justify-center lg:items-center lg:bg-black lg:h-56 lg:w-[18rem] lg:rounded-b-xl   xl:p-4 xl:flex xl:flex-col xl:justify-center xl:items-center xl:bg-black xl:h-56 xl:w-[24rem] xl:rounded-b-xl   2xl:p-4 2xl:flex 2xl:flex-col 2xl:justify-center 2xl:items-center 2xl:bg-black 2xl:h-56 2xl:w-[24rem] 2xl:rounded-b-xl">
+                <div className="p-2 flex flex-col bg-black h-28 w-[15rem] rounded-r-lg   sm:p-4 sm:flex sm:flex-col sm:bg-black sm:h-40 sm:w-[24rem] sm:rounded-r-xl   md:p-4 md:flex md:flex-col md:justify-center md:items-center md:bg-black md:h-44 md:w-[19.5rem] md:rounded-b-xl md:rounded-tr-none   lg:p-4 lg:flex lg:flex-col lg:justify-center lg:items-center lg:bg-black lg:h-56 lg:w-[18rem] lg:rounded-b-xl   xl:p-4 xl:flex xl:flex-col xl:justify-center xl:items-center xl:bg-black xl:h-56 xl:w-[24rem] xl:rounded-b-xl   2xl:p-4 2xl:flex 2xl:flex-col 2xl:justify-center 2xl:items-center 2xl:bg-black 2xl:h-56 2xl:w-[24rem] 2xl:rounded-b-xl">
                   <h1 className="   mt-0 text-[#14fca9] text-center text-xl font-extrabold   sm:mt-0 sm:text-[#14fca9] sm:text-center sm:text-3xl sm:font-extrabold   md:mt-4 md:text-[#14fca9] md:text-3xl md:font-extrabold   lg:mt-2 lg:text-[#14fca9] lg:text-3xl lg:font-extrabold   xl:mt-2 xl:text-[#14fca9] xl:text-3xl xl:font-extrabold   2xl:mt-2 2xl:text-[#14fca9] 2xl:text-3xl 2xl:font-extrabold">
                     Portfolio Website
                   </h1>
@@ -221,7 +221,7 @@ export default function Home() {
               <div className="   flex flex-row justify-center items-center rounded-xl transition-all ease-in delay-75 hover:translate-x-4   sm:flex sm:flex-row sm:justify-center sm:items-center sm:rounded-xl sm:transition-all sm:ease-in sm:delay-75 sm:hover:translate-x-6    md:flex md:flex-col md:rounded-xl md:transition-all md:ease-in md:delay-75 md:hover:-translate-y-4 md:hover:translate-x-0   lg:flex lg:flex-col lg:rounded-xl lg:transition-all lg:ease-in lg:delay-75 lg:hover:-translate-y-4   xl:flex xl:flex-col xl:rounded-xl xl:transition-all xl:ease-in xl:delay-75 xl:hover:-translate-y-4   2xl:flex 2xl:flex-col 2xl:rounded-xl 2xl:transition-all 2xl:ease-in 2xl:delay-75 2xl:hover:-translate-y-4 "><div>
                 <Image src={ecommmerce} alt="" className="   h-28 w-[6rem] rounded-l-lg object-fill   sm:h-40 sm:w-[10.5rem] sm:rounded-l-xl sm:object-fill   md:h-64 md:w-[19.5rem] md:rounded-t-xl md:rounded-bl-none md:rounded-br-none md:object-fill   lg:h-60 lg:w-[18rem] lg:rounded-t-xl lg:object-fill   xl:h-72 xl:w-[24rem] xl:rounded-t-xl xl:object-fill   2xl:h-72 2xl:w-[24rem] 2xl:rounded-t-xl 2xl:object-fill" />
               </div>
-                <div className="   p-4 flex flex-col bg-black h-28 w-[15rem] rounded-r-lg   sm:p-4 sm:flex sm:flex-col sm:bg-black sm:h-40 sm:w-[24rem] sm:rounded-r-xl   md:p-4 md:flex md:flex-col md:justify-center md:items-center md:bg-black md:h-44 md:w-[19.5rem] md:rounded-b-xl md:rounded-tr-none   lg:p-4 lg:flex lg:flex-col lg:justify-center lg:items-center lg:bg-black lg:h-56 lg:w-[18rem] lg:rounded-b-xl   xl:p-4 xl:flex xl:flex-col xl:justify-center xl:items-center xl:bg-black xl:h-56 xl:w-[24rem] xl:rounded-b-xl   2xl:p-4 2xl:flex 2xl:flex-col 2xl:justify-center 2xl:items-center 2xl:bg-black 2xl:h-56 2xl:w-[24rem] 2xl:rounded-b-xl">
+                <div className="p-2 flex flex-col bg-black h-28 w-[15rem] rounded-r-lg   sm:p-4 sm:flex sm:flex-col sm:bg-black sm:h-40 sm:w-[24rem] sm:rounded-r-xl   md:p-4 md:flex md:flex-col md:justify-center md:items-center md:bg-black md:h-44 md:w-[19.5rem] md:rounded-b-xl md:rounded-tr-none   lg:p-4 lg:flex lg:flex-col lg:justify-center lg:items-center lg:bg-black lg:h-56 lg:w-[18rem] lg:rounded-b-xl   xl:p-4 xl:flex xl:flex-col xl:justify-center xl:items-center xl:bg-black xl:h-56 xl:w-[24rem] xl:rounded-b-xl   2xl:p-4 2xl:flex 2xl:flex-col 2xl:justify-center 2xl:items-center 2xl:bg-black 2xl:h-56 2xl:w-[24rem] 2xl:rounded-b-xl">
                   <h1 className="   mt-0 text-[#14fca9] text-center text-xl font-extrabold   sm:mt-0 sm:text-[#14fca9] sm:text-center sm:text-3xl sm:font-extrabold   md:mt-4 md:text-[#14fca9] md:text-3xl md:font-extrabold   lg:mt-2 lg:text-[#14fca9] lg:text-3xl lg:font-extrabold   xl:mt-2 xl:text-[#14fca9] xl:text-3xl xl:font-extrabold   2xl:mt-2 2xl:text-[#14fca9] 2xl:text-3xl 2xl:font-extrabold">
                     E-Commerce Website
                   </h1>
@@ -260,11 +260,13 @@ export default function Home() {
         </div>
 
 
-        <div id="contacts">
+        <div id="contacts" className="mb-6"> 
           <Contact />
         </div>
 
-        <Footer />
+        <Footer/>
+
+       
       
       </div>
 

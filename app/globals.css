@@ -40,8 +40,8 @@ justify-content:center;
     /* top:20%; */
     left: 50%;
     
-    height: 400px;
-    width: 20vw;
+    
+  
     border-radius: 2vw;
     transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
  } 

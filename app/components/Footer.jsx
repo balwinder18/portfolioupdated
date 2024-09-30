@@ -6,7 +6,7 @@ const Footer = () => {
       <div className='flex justify-center items-center flex-col sm:flex-row gap-5 text-center'>
       
       <p>
-        2024 Portfolio  © All Rights reserved 
+         2024 © Portfolio  
       </p>
       </div>
 

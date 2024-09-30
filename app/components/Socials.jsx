@@ -11,7 +11,7 @@ const Socials = () => {
   return (
     <footer style={{backgroundColor:"#dadada"}}>
     <div className="w-full mt-16 mr-7 ml-5">
-        <div className="flex justify-center">
+        <div className="flex flex-col lg:flex-row items-center justify-center">
             <a className='p-3 bg-white m-3' style={{borderRadius:"50%"}} href="https://github.com/balwinder18" target="_blank"><i className="text-8xl text-opacity-90 text-black">
                   <FaGithub/>
                 </i></a>
